@@ -6,8 +6,8 @@ class TituloDinamico extends HTMLElement{
 
         //primeiro cria a base do compomente 
 
-        const compontRoot = document.createElement("h1");
-        compontRoot.textContent = "Kedna";
+        const componentRoot = document.createElement("h1");
+        componentRoot.textContent = this.getAttribute("title");
 
         //segundo estilizar 
 
@@ -19,7 +19,7 @@ class TituloDinamico extends HTMLElement{
         `
         // envia para a shadow
 
-        shadow.appendChild(compontRoot);
+        shadow.appendChild(componentRoot);
         shadow.appendChild(style);
     }
     
